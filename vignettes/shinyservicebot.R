@@ -1,14 +1,15 @@
-## ----setup, echo = FALSE, message = FALSE--------------------------------
-knitr::opts_chunk$set(tidy = FALSE, comment = "#>")
+## ----setup, echo = FALSE, message = FALSE-------------------------
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", width = 68)
+options(width = 68, cli.unicode = FALSE, cli.width = 68)
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------
 #  install.packages("servicebot")
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------
 #  install.packages("remotes")
 #  remotes::install_github("capiaas/servicebot")
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------
 #  library(shinyservicebot)
 #  shinyservicebot::shinyservicebot(servicebot_config, width = "auto")
 #  
@@ -23,7 +24,7 @@ knitr::opts_chunk$set(tidy = FALSE, comment = "#>")
 #  # Render the shinyservoicebot pricing
 #  shinyservicebot::shinyservicebotOutput("servicebot")
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------
 #  library(shiny)
 #  library(shinyservicebot)
 #  
