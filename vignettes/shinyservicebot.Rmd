@@ -11,12 +11,14 @@ vignette: >
 
 
 ```{r setup, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(tidy = FALSE, comment = "#>")
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", width = 68)
+options(width = 68, cli.unicode = FALSE, cli.width = 68)
 ```
 
 # shinyservicebot - Integrate servicebot payment ( stripe ) framework in R shiny
 
 [![CRAN version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
+![](logo.png){ width=120px }
 
 ## Installation
 
