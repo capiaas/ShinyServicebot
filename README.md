@@ -1,9 +1,9 @@
-# shinyservicebot
+#  shinyservicebot <img src="man/figures/logo.png" align="right" width=120 height=139 alt="" />
 
 [![CRAN
 version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
 
-`shinyservicebot` is a Shiny integration for servicebot billing.
+`shinyservicebot` Enables In-App Purchasing and subscriptions through servicebot payment ( stripe ) framework for R shiny.
 
 Servicebot provides a user interface (UI) on top of Stripe. Stripe will remain the single source of truth for all things billing which makes Servicebot the easiest & fastest way to launch with Stripe.
 
@@ -28,7 +28,7 @@ remotes::install_github("capiaas/shinyservicebot")
 
 ## Getting Started
 
-To learn more we highly recommend you check out the [servicebot docs](https://docs.servicebot.io/). The site will explains in depths the setup of servicebot.
+To learn more we highly recommend you check out the [servicebot docs](https://docs.servicebot.io/). The site will explain in depths the setup of servicebot.
 
 ### Servicebot setup
  - Setup servicebot account: https://dashboard.servicebot.io/signup
