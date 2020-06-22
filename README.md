@@ -143,12 +143,12 @@ shinyApp(ui = ui, server = server)
 You can run examples directly from the package
 
 ```
- # Test pricing embed inshiny app
+ # Test pricing embed in shiny app
  shinyservicebot::runPricingExample()
 
- # Test portal embed inshiny app
+ # Test portal embed in shiny app
  shinyservicebot::runPortalExample()
 
- # Test signup embed inshiny app
+ # Test signup embed in shiny app
  shinyservicebot::runSignupExample()
 ```
