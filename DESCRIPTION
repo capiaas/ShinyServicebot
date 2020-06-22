@@ -1,0 +1,24 @@
+Package: shinyservicebot
+Type: Package
+Title: Servicebot shiny integration
+Version: 0.1.0
+Authors@R: c(person("Bjørn Ole", "Lindseth", email = "bjorn.ole@capia.no", role = c("aut", "cre")),
+  person("Stian", "Berger", email = "stian@capia.no", role = "aut"),
+  person(family = "Capia AS", role = c("cph")))
+Description: This package integrates the servicebot payment ( stripe ) framework for R shiny.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+URL: https://github.com/capiaas/shinyservicebot
+BugReports: https://github.com/capiaas/shinyservicebot/issues
+Depends: 
+  R (>= 3.1.0)
+Imports: 
+  htmltools (>= 0.2.6),
+  htmlwidgets (>= 0.6),
+  digest,
+  shiny
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Suggests: 
+    testthat (>= 2.1.0),  knitr, rmarkdown

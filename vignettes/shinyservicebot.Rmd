@@ -1,0 +1,113 @@
+---
+title: "Shinyservicebot"
+author: "Capia As / Bjorn Ole Lindseth"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Shinyservicebot}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+```{r setup, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(tidy = FALSE, comment = "#>")
+```
+
+# shinyservicebot - Integrate servicebot payment ( stripe ) framework in R shiny
+
+[![CRAN version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
+
+## Installation
+
+`shinyservicebot` is available through both GitHub ( soon on cran ):
+
+To install the stable CRAN version:
+
+```{r eval=FALSE}
+install.packages("servicebot")
+```
+
+To install the latest development version from GitHub:
+
+```{r eval=FALSE}
+install.packages("remotes")
+remotes::install_github("capiaas/servicebot")
+```
+
+## Getting Started
+
+To learn more we highly recommend you check out the [servicebot docs](https://docs.servicebot.io/). The site will explains in depths the setup of servicebot.
+
+### Servicebot setup
+ - Setup servicebot account: https://dashboard.servicebot.io/signup
+ - Available config parameters [Click here](https://docs.servicebot.io/subscription-portal/subscription-management-portal/subscription-management-portal-configuration).
+
+## In use
+### Example: Pricing embed:
+```{r eval=FALSE}
+library(shinyservicebot)
+shinyservicebot::shinyservicebot(servicebot_config, width = "auto")
+
+# init servicebot pr user login
+shinyservicebot::init(dev_mode = TRUE)
+# Config
+servicebot_config = list(
+  servicebot_id =  "E0OQN0P0Dort", # // LIVE & TEST MODE IDs ARE DIFFERENT
+  service =   "Flat Subscription",
+  email =  "shinyservicebot36io3ejbyf1pea7g61mxki@yopmail.com"
+)
+# Render the shinyservoicebot pricing
+shinyservicebot::shinyservicebotOutput("servicebot")
+```
+![Pricing page](../inst/assets/img/pricing_page.png "fig:"){#id .class width=50%}
+
+
+### Example: Portal embed in Shiny app
+```{r eval=FALSE}
+library(shiny)
+library(shinyservicebot)
+
+# -------
+# FOR LIVE PRODUCTION
+# -------
+# shinyservicebot::init(
+#   servicebot_secret    = "Your servicebot secret",
+#   secure_setup         = TRUE
+# )
+
+# -------
+# FOR DEVELOPMENT
+# -------
+shinyservicebot::init(dev_mode = TRUE)
+
+# Config
+servicebot_config = list(
+  servicebot_id =  "E0OQN0P0Dort", # // LIVE & TEST MODE IDs ARE DIFFERENT
+  service =   "Flat Subscription",
+  email =  "shinyservicebot36io3ejbyf1pea7g61mxki@yopmail.com",
+  options = list(
+    i18n  = list(defaultLng = "en") # // SET DEFAULT LANGUAGE
+  )
+)
+
+# UI ----
+ui <- fluidPage(
+  # App title ----
+  titlePanel("SERVICEBOT PORTAL PAGE"),
+  shinyservicebot::shinyservicebotOutput("servicebot")
+)
+
+# SERVER ----
+server <- function(input, output) {
+  output$servicebot <- shinyservicebot::renderShinyservicebot(
+    shinyservicebot::shinyservicebot(servicebot_config, width = "auto")
+  )
+}
+
+
+# Create Shiny app ----
+shinyApp(ui = ui, server = server)
+
+```
+![Portal page](../inst/assets/img/subscription_portal.png "fig:"){#id .class width=50%}
