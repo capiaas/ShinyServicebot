@@ -138,3 +138,17 @@ shinyApp(ui = ui, server = server)
 
 ```
 ![Portal page](inst/assets/img/subscription_portal.png "fig:")
+
+## Examples
+You can run examples directly from the package
+
+```
+ # Test pricing embed inshiny app
+ shinyservicebot::runPricingExample()
+
+ # Test portal embed inshiny app
+ shinyservicebot::runPortalExample()
+
+ # Test signup embed inshiny app
+ shinyservicebot::runSignupExample()
+```

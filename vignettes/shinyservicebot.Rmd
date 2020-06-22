@@ -11,12 +11,14 @@ vignette: >
 
 
 ```{r setup, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(tidy = FALSE, comment = "#>")
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", width = 68)
+options(width = 68, cli.unicode = FALSE, cli.width = 68)
 ```
 
 # shinyservicebot - Integrate servicebot payment ( stripe ) framework in R shiny
 
 [![CRAN version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
+![](logo.png){ width=120px }
 
 ## Installation
 
@@ -111,3 +113,17 @@ shinyApp(ui = ui, server = server)
 
 ```
 ![Portal page](../inst/assets/img/subscription_portal.png "fig:"){#id .class width=50%}
+
+## Examples
+You can run examples directly from the package
+
+```{r eval=FALSE}
+ # Test pricing embed inshiny app
+ shinyservicebot::runPricingExample()
+
+ # Test portal embed inshiny app
+ shinyservicebot::runPortalExample()
+
+ # Test signup embed inshiny app
+ shinyservicebot::runSignupExample()
+```
