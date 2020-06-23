@@ -5,6 +5,8 @@ version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-p
 
 `shinyservicebot` enables In-App Purchasing and subscriptions through Servicebot payment ( stripe ) framework for R shiny.
 
+## What is Servicebot and Stripe
+
 "Servicebot provides a user interface (UI) on top of Stripe. Stripe will remain the single source of truth for all things billing which makes Servicebot the easiest & fastest way to launch with Stripe."
 
 [Click here](https://docs.servicebot.io/) for more information about 
