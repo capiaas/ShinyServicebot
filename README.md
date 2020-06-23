@@ -42,7 +42,6 @@ To learn more we highly recommend you check out the [servicebot docs](https://do
 ### Example: Pricing embed:
 ```
 library(shinyservicebot)
-shinyservicebot::shinyservicebot(servicebot_config, width = "auto")
 
 # init servicebot pr user login
 shinyservicebot::init(dev_mode = TRUE)
