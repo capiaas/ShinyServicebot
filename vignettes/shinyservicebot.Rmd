@@ -20,6 +20,18 @@ options(width = 68, cli.unicode = FALSE, cli.width = 68)
 [![CRAN version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
 ![](logo.png){ width=120px }
 
+`shinyservicebot` enables In-App Purchasing and subscriptions through Servicebot payment ( stripe ) framework for R shiny.
+
+
+"Servicebot provides a user interface (UI) on top of Stripe. Stripe will remain the single source of truth for all things billing which makes Servicebot the easiest & fastest way to launch with Stripe."
+
+
+[Click here](https://docs.servicebot.io/) for more information about 
+servicebot.
+
+[Click here](https://stripe.com) for more information about 
+stripe.
+
 ## Installation
 
 `shinyservicebot` is available through both GitHub ( soon on cran ):
