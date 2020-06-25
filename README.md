@@ -29,10 +29,10 @@ remotes::install_github("capiaas/shinyservicebot")
 
 ## Getting Started
 
-To learn more we highly recommend you check out the [servicebot docs](https://docs.servicebot.io/). The site will explain in depths the setup of servicebot.
+To learn more we highly recommend you check out the [servicebot docs](https://docs.servicebot.io/). The site will explain in depths the setup of Servicebot.
 
 ### Servicebot setup
- - Setup servicebot account: https://dashboard.servicebot.io/signup
+ - Setup Servicebot account: https://dashboard.servicebot.io/signup
  - Available config parameters [Click here](https://docs.servicebot.io/subscription-portal/subscription-management-portal/subscription-management-portal-configuration).
 
 ## In use
@@ -176,3 +176,7 @@ You can run examples directly from the package
  # Test signup embed in shiny app
  shinyservicebot::runSignupExample()
 ```
+
+Disclaimer
+
+This package is not affiliated with any of the service providers it supports.
