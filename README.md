@@ -176,3 +176,7 @@ You can run examples directly from the package
  # Test signup embed in shiny app
  shinyservicebot::runSignupExample()
 ```
+
+Disclaimer
+
+This package is not affiliated with any of the service providers it supports.
