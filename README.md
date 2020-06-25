@@ -169,7 +169,7 @@ You can run examples directly from the package
 ```
  # Test pricing embed in shiny app
  shinyservicebot::runPricingExample()
-
+a
  # Test portal embed in shiny app
  shinyservicebot::runPortalExample()
 
@@ -177,6 +177,6 @@ You can run examples directly from the package
  shinyservicebot::runSignupExample()
 ```
 
-Disclaimer
+## Disclaimer
 
 This package is not affiliated with any of the service providers it supports.
