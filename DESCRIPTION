@@ -3,7 +3,7 @@ Type: Package
 Title: Servicebot Shiny Integration
 Version: 0.1.0
 Authors@R: c(person("Bjorn Ole", "Lindseth", email = "bjorn.ole@capia.no", role = c("aut", "cre")),
-  person("Stian", "Berger", email = "stian@capia.no", role = "aut"),
+  person("Stian", "Berger", email = "stian@capia.no", role = "cre"),
   person(family = "Capia AS", role = c("cph")))
 Description: This package enables In-App Purchasing and subscriptions through Servicebot payment ( stripe ) framework for R shiny.
 License: MIT + file LICENSE

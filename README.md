@@ -1,4 +1,4 @@
-#  shinyservicebot <img src="man/figures/logo.png" align="right" width=120 height=139 alt="" />
+#  ShinyServicebot <img src="man/figures/logo.png" align="right" width=120 height=139 alt="" />
 
 [![CRAN
 version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
@@ -7,24 +7,19 @@ version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-p
 
 ## What is Servicebot and Stripe
 
+### Servicebot
 "Servicebot provides a user interface (UI) on top of Stripe. Stripe will remain the single source of truth for all things billing which makes Servicebot the easiest & fastest way to launch with Stripe."
 
 [Click here](https://docs.servicebot.io/) for more information about 
 servicebot.
 
-[Click here](https://stripe.com) for more information about 
-stripe.
+### Stripe
+Online payment processing for internet businesses. Stripe is a suite of payment APIs that powers commerce for online businesses
+
+[Click here](https://stripe.com) for more information about stripe.
 
 
 ## Installation
-
-To install the stable version from CRAN, simply run the following from an R console:
-
-```r
-install.packages("shinyservicebot")
-```
-
-To install the latest development builds directly from GitHub, run this instead:
 
 ```r
 if (!require("remotes")) install.packages("remotes")
@@ -41,6 +36,30 @@ To learn more we highly recommend you check out the [servicebot docs](https://do
  - Available config parameters [Click here](https://docs.servicebot.io/subscription-portal/subscription-management-portal/subscription-management-portal-configuration).
 
 ## In use
+
+### Initialize servicebot
+Initialize servicebot by running the init command.
+
+#### Development mode
+```
+# -------
+# FOR DEVELOPMENT
+# -------
+shinyservicebot::init(dev_mode = TRUE)
+```
+
+#### Live mode
+```
+# -------
+# FOR LIVE PRODUCTION
+# -------
+shinyservicebot::init(
+   servicebot_secret    = "Your servicebot secret",
+   secure_setup         = TRUE
+)
+```
+
+
 ### Example: Pricing embed:
 ```
 library(shinyservicebot)
