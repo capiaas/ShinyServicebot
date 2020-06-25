@@ -169,13 +169,14 @@ You can run examples directly from the package
 ```
  # Test pricing embed in shiny app
  shinyservicebot::runPricingExample()
-a
+
  # Test portal embed in shiny app
  shinyservicebot::runPortalExample()
 
  # Test signup embed in shiny app
  shinyservicebot::runSignupExample()
 ```
+
 
 ## Disclaimer
 
