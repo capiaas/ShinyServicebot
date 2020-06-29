@@ -15,22 +15,26 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>", width = 68)
 options(width = 68, cli.unicode = FALSE, cli.width = 68)
 ```
 
-# shinyservicebot - Integrate servicebot payment ( stripe ) framework in R shiny
+# shinyservicebot - Create in-app purchasing and subscriptions through 'Servicebot' payment using the 'Stripe' framework
 
 [![CRAN version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
 ![](logo.png){ width=120px }
 
-`shinyservicebot` enables In-App Purchasing and subscriptions through Servicebot payment ( stripe ) framework for R shiny.
+`shinyservicebot` Create in-app purchasing and subscriptions through 'Servicebot' payment using the 'Stripe' framework.
 
+## What is Servicebot and Stripe
 
+### Servicebot
 "Servicebot provides a user interface (UI) on top of Stripe. Stripe will remain the single source of truth for all things billing which makes Servicebot the easiest & fastest way to launch with Stripe."
-
 
 [Click here](https://docs.servicebot.io/) for more information about 
 servicebot.
 
-[Click here](https://stripe.com) for more information about 
-stripe.
+### Stripe
+Online payment processing for internet businesses. Stripe is a suite of payment APIs that powers commerce for online businesses
+
+[Click here](https://stripe.com) for more information about stripe.
+
 
 ## Installation
 

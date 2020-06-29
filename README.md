@@ -3,7 +3,7 @@
 [![CRAN
 version](https://www.r-pkg.org/badges/version/shinyservicebot)](https://cran.r-project.org/package=shinyservicebot)
 
-`shinyservicebot` enables In-App Purchasing and subscriptions through Servicebot payment ( stripe ) framework for R shiny.
+`shinyservicebot` Create in-app purchasing and subscriptions through 'Servicebot' payment using the 'Stripe' framework.
 
 ## What is Servicebot and Stripe
 
