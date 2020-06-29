@@ -5,5 +5,9 @@
 .Rprofile
 packrat/lib*/
 packrat/src/
+vignettes/*.html
+vignettes/*.R
 doc
 Meta
+vignettes/shinyservicebot.html
+vignettes/shinyservicebot.R
