@@ -22,6 +22,11 @@ Online payment processing for internet businesses. Stripe is a suite of payment 
 ## Installation
 
 ```r
+install.packages("shinyservicebot")
+```
+
+
+```r
 if (!require("remotes")) install.packages("remotes")
 remotes::install_github("capiaas/shinyservicebot")
 ```
