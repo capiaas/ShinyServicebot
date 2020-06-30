@@ -21,10 +21,13 @@ Online payment processing for internet businesses. Stripe is a suite of payment 
 
 ## Installation
 
+To install the stable version from CRAN, simply run the following from an R console:
+
 ```r
 install.packages("shinyservicebot")
 ```
 
+To install the latest development builds directly from GitHub, run this instead:
 
 ```r
 if (!require("remotes")) install.packages("remotes")
