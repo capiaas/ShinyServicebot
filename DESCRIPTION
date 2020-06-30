@@ -1,6 +1,6 @@
 Package: shinyservicebot
 Type: Package
-Title: Servicebot Shiny Integration
+Title: Servicebot 'Shiny' Integration
 Version: 0.1.0
 Authors@R: c(person("Bjorn Ole", "Lindseth", email = "bjorn.ole@capia.no", role = c("aut", "cre")),
   person("Stian", "Berger", email = "stian@capia.no", role = "ctb"),
